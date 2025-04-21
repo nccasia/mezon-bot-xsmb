@@ -1,0 +1,19 @@
+{
+  "name": "mezon-bot-example",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "postinstall": "patch-package",
+    "start": "nodemon index"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "mezon-sdk": "^2.7.61",
+    "node-cron": "^3.0.3",
+    "patch-package": "^8.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
