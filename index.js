@@ -28,10 +28,10 @@ async function loadCommands() {
 async function main() {
   const client = new MezonClient(process.env.APPLICATION_TOKEN);
 
-  await client.authenticate();
+  await client.login()
   await loadCommands();
 
-  client.on("channel_message", async (event) => {
+  client.onChannelMessage(async (event) => {
     const content = event?.content?.t?.trim?.();
 
     if (content && content.startsWith("*")) {
